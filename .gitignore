@@ -1,0 +1,87 @@
+# ── Environment ───────────────────────────────────────────────────────────────
+.env                    # never commit secrets
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── SQLite database (contains personal interview data) ───────────────────────
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# ── Temporary audio files ─────────────────────────────────────────────────────
+data/*.wav
+data/*.mp3
+data/*.ogg
+*.wav
+*.mp3
+
+# ── Temporary report exports ──────────────────────────────────────────────────
+data/*.md
+data/*.txt
+*.report.md
+
+# ── IDE and OS ───────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# ── Whisper model cache ───────────────────────────────────────────────────────
+# (Hugging Face cache is stored in ~/.cache by default; not in the project dir)
+
+# ── Streamlit ─────────────────────────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── Python testing and coverage ───────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# ── Jupyter Notebook ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── Temporary files ──────────────────────────────────────────────────────────
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# ── OS files ─────────────────────────────────────────────────────────────────
+.DS_Store
+Desktop.ini
+
+# ── Build and packaging ──────────────────────────────────────────────────────
+.eggs/
+pip-wheel-metadata/
+
+# ── Local model files ────────────────────────────────────────────────────────
+*.gguf
+*.safetensors
+*.bin
+
+# ── Environment backups ──────────────────────────────────────────────────────
+.env.*
+!.env.example
+.env
+!.env.example
